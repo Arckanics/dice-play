@@ -468,12 +468,21 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+html {
+    font-family: 'Lato', sans-serif;
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity))}
+body {
+    min-height: 800px
+  }
 #root-dice-game, .root-dice-game {
     height: calc(100vw / 16 * 9);
     width: calc(100vw - 30px);
     margin: 15px auto;
     max-width: 1024px;
     max-height: calc(1024px / 16 * 9);
+    min-width: 764px;
+    min-height: calc(764px / 16 * 9);
     font-family: 'Lato', sans-serif;
     position: relative;
     display: flex;
@@ -582,6 +591,15 @@ video {
 .icon svg {
     fill: rgb(244 63 94);
     height: 1.75rem}
+.fixed {
+  position: fixed;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -601,6 +619,9 @@ video {
 .w-1\/4 {
   width: 25%;
 }
+.w-full {
+  width: 100%;
+}
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -615,8 +636,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
 .p-3 {
   padding: 0.75rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .px-9 {
   padding-left: 2.25rem;
@@ -624,6 +652,9 @@ video {
 }
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+.text-center {
+  text-align: center;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -640,6 +671,10 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-thin {
   font-weight: 100;
